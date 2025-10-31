@@ -12,14 +12,15 @@ int main() {
 	cout << " ZAHL VON 0-15 \n";
 	
 	int x = 0;
+	cout << "   a" << "   b" << "   c" << "   d" << "   OUT" << "\n";
 	for (int i = 0; i < 16; i++) {
 		int a = (i & e);
 		int b = (i & f) >> 1;
 		int c = (i & g) >> 2;
 		int d = (i & h) >> 3;
-		cout << d << c << b << a;
+		
 		int OUT = (a & d | (a & c & (b ^ c)));
-		cout << "a = " << a << " b = " << b << " c = " << c << " d = " << d << "OUT = " << OUT << "\n";
+		cout << "   " << a << "   " << b << "   " << c << "   " << d << "   " << OUT << "\n";
 	}
 	
 	
